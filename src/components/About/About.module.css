@@ -1,0 +1,140 @@
+.aboutSection {
+  background-color: var(--background);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+.statementArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: var(--font-geist-mono), monospace;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--foreground);
+}
+
+.paragraph {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px dashed var(--border);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.metricValue {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.25rem;
+}
+
+.metricLabel {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Terminal Window for Skills */
+.terminalWindow {
+  background-color: #080808;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.terminalHeader {
+  background-color: #111111;
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+}
+
+.terminalHeader::before {
+  content: '>';
+  color: #4af626;
+  margin-right: 0.5rem;
+}
+
+.terminalBody {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skillGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skillCategory {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.85rem;
+  color: var(--foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skillItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skillBadge {
+  background-color: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.skillBadge:hover {
+  background-color: var(--foreground);
+  color: var(--background);
+  border-color: var(--foreground);
+}

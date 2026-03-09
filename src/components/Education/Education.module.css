@@ -1,0 +1,89 @@
+.eduSection {
+  background-color: var(--background);
+  border-top: 1px dashed var(--border);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+.label {
+  font-family: var(--font-geist-mono), monospace;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+  color: var(--foreground);
+}
+
+.card {
+  border-left: 2px solid var(--foreground);
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.degree {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.university {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.program {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.listItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.listIcon {
+  font-family: var(--font-geist-mono), monospace;
+  color: var(--accent);
+  font-weight: bold;
+  margin-top: 0.2rem;
+}
+
+.listItem h4 {
+  color: var(--foreground);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.listItem p {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
