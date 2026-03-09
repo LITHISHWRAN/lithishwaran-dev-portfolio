@@ -7,7 +7,7 @@ const COMMAND_SEQUENCE = [
   { cmd: '> whoami', output: 'Lithishwaran V' },
   { cmd: '> cat role.txt', output: 'Software Product Engineer' },
   { cmd: '> ls tech_stack/', output: 'Node.js   Python   Next.js   React   PostgreSQL   MongoDB   Docker   AWS' },
-  { cmd: '> ./deploy_to.sh --target="Google"', output: '[OK] Scalability: High\n[OK] Performance: Optimized\n[OK] Ready to innovate.' }
+  { cmd: '> ./deploy_to.sh --target="production"', output: '[OK] Scalability: High\n[OK] Performance: Optimized\n[OK] Ready to innovate.' }
 ];
 
 export default function Hero() {
