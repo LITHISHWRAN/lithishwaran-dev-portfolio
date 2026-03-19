@@ -19,7 +19,16 @@ const PROJECTS = [
     architecture: 'Event-driven WebSocket architecture for real-time customer-designer collaboration and secure JWT authentication layer.',
     impact: 'Deployed a scalable platform that empowered designers with global reach, incorporating real-time messaging and seamless e-commerce transactions.',
     links: { github: 'https://github.com/LITHISHWRAN/Fllips.git', figma: 'https://www.figma.com/design/VV2Q48XjwVoJQHgW7lCSTT/CapeStone-Highfid?node-id=0-1&t=P30bMHN2XvbvD49g-1' }
-  }
+  },
+  {
+  title: 'VOXSCOUT',
+  role: 'AI Recruiter Voice Agent',
+  date: 'Month 2026 - Present',
+  tech: ['Next.js', 'Node.js', 'LLM APIs (Gemini/OpenAI)', 'Murf Falcon', 'WebSockets', 'MongoDB/PostgreSQL'],
+  architecture: 'AI-driven conversational system with stateful context management, integrating real-time voice interaction and LLM-based decision workflows for dynamic interview orchestration.',
+  impact: 'Automated first-round candidate screening by conducting voice-based interviews, generating structured evaluations, and reducing manual recruiter effort through scalable AI-driven assessment.',
+  links: { github: 'https://github.com/LITHISHWRAN/voxscout.git' }
+}
 ];
 
 export default function Projects() {
