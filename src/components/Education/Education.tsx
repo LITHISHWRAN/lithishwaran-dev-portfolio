@@ -6,7 +6,6 @@ export default function Education() {
     <section id="education" className={`section ${styles.eduSection}`}>
       <div className={`container ${styles.grid}`}>
         <div className={styles.eduBlock}>
-          <div className={styles.label}>// ACADEMIC FOUNDATION</div>
           <h2 className={styles.heading}>Education</h2>
           <div className={styles.card}>
             <h3 className={styles.degree}>B.Tech in Computer Science (Software Product Engineering)</h3>
@@ -16,7 +15,6 @@ export default function Education() {
         </div>
 
         <div className={styles.achievementsBlock}>
-          <div className={styles.label}>// EXTRACURRICULARS</div>
           <h2 className={styles.heading}>Achievements & Contributions</h2>
           <div className={styles.list}>
             <div className={styles.listItem}>

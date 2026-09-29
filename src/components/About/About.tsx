@@ -14,7 +14,6 @@ export default function About() {
     <section id="about" className={`section ${styles.aboutSection}`}>
       <div className={`container ${styles.grid}`}>
         <div className={styles.statementArea}>
-          <div className={styles.label}>// SYSTEM ARCHITECTURE & ENGINEERING</div>
           <h2 className={styles.heading}>Building High-Performance Systems</h2>
           <p className={styles.paragraph}>
             I am a Software Product Engineer specializing in modern full-stack development. 

@@ -2,14 +2,29 @@ import React from 'react';
 import styles from './Projects.module.css';
 
 const PROJECTS = [
+  // {
+  //   title: 'KOIN',
+  //   role: 'Full Stack AI Finance Platform',
+  //   date: 'October 2025 – Present',
+  //   tech: ['Next.js App Router', 'Supabase (PostgreSQL)', 'Prisma', 'Inngest', 'Gemini API', 'ArcJet'],
+  //   architecture: 'Serverless architecture integrating AI-driven insights via Gemini API and automated background workflows using Inngest.',
+  //   impact: 'Engineered real-time financial dashboards and transaction analysis, significantly reducing user overspending through preemptive AI-driven budgeting alerts.',
+  //   links: { github: 'https://github.com/LITHISHWRAN/Koin.git' }
+  // },
   {
-    title: 'KOIN',
-    role: 'Full Stack AI Finance Platform',
-    date: 'October 2025 – Present',
-    tech: ['Next.js App Router', 'Supabase (PostgreSQL)', 'Prisma', 'Inngest', 'Gemini API', 'ArcJet'],
-    architecture: 'Serverless architecture integrating AI-driven insights via Gemini API and automated background workflows using Inngest.',
-    impact: 'Engineered real-time financial dashboards and transaction analysis, significantly reducing user overspending through preemptive AI-driven budgeting alerts.',
-    links: { github: 'https://github.com/LITHISHWRAN/Koin.git' }
+    title: 'JARVIS M3',
+
+    role: 'Local AI Agent & Desktop Automation System',
+
+    date: '2026',
+
+    tech: ['Python', 'Qwen3-8B', 'GGUF', 'llama.cpp', 'CUDA', 'Playwright', 'PyGame'],
+
+    architecture: 'Local agent architecture combining Qwen3-8B inference with structured tool calling, modular system-control services, browser automation, and feedback-driven task execution.',
+
+    impact: 'Engineered a privacy-first AI agent that converts natural-language commands into executable computer actions, supporting application control, browser interaction, filesystem operations, clipboard management, media control, and network-aware automation.',
+
+    links: {github: 'https://github.com/LITHISHWRAN/JARVIS.git'}
   },
   {
     title: 'FLIPS',
@@ -21,14 +36,32 @@ const PROJECTS = [
     links: { github: 'https://github.com/LITHISHWRAN/Fllips.git', figma: 'https://www.figma.com/design/VV2Q48XjwVoJQHgW7lCSTT/CapeStone-Highfid?node-id=0-1&t=P30bMHN2XvbvD49g-1' }
   },
   {
-  title: 'VOXSCOUT',
-  role: 'AI Recruiter Voice Agent',
-  date: 'Month 2026 - Present',
-  tech: ['Next.js', 'Node.js', 'LLM APIs (Gemini/OpenAI)', 'Murf Falcon', 'WebSockets', 'MongoDB/PostgreSQL'],
-  architecture: 'AI-driven conversational system with stateful context management, integrating real-time voice interaction and LLM-based decision workflows for dynamic interview orchestration.',
-  impact: 'Automated first-round candidate screening by conducting voice-based interviews, generating structured evaluations, and reducing manual recruiter effort through scalable AI-driven assessment.',
-  links: { github: 'https://github.com/LITHISHWRAN/voxscout.git' }
-}
+    title: 'Lil-Link',
+
+    role: 'Distributed URL Shortener & Analytics Platform',
+
+    date: '2026',
+
+    tech: ['Spring Boot', 'React', 'PostgreSQL', 'Redis', 'REST API'],
+
+    architecture: 'Distributed client-server architecture with a Spring Boot REST API, PostgreSQL persistence layer, Redis-backed caching, and React frontend for URL management and analytics.',
+
+    impact: 'Built and deployed a scalable URL-shortening platform with unique short-link generation, persistent URL storage, fast redirect resolution through Redis caching, and analytics-oriented tracking.',
+
+    links: {
+      github: 'https://github.com/LITHISHWRAN/lil-link.git',
+      live: 'https://lil-link-alpha.vercel.app/'
+    }
+  },
+//   {
+//   title: 'VOXSCOUT',
+//   role: 'AI Recruiter Voice Agent',
+//   date: 'Month 2026 - Present',
+//   tech: ['Next.js', 'Node.js', 'LLM APIs (Gemini/OpenAI)', 'Murf Falcon', 'WebSockets', 'MongoDB/PostgreSQL'],
+//   architecture: 'AI-driven conversational system with stateful context management, integrating real-time voice interaction and LLM-based decision workflows for dynamic interview orchestration.',
+//   impact: 'Automated first-round candidate screening by conducting voice-based interviews, generating structured evaluations, and reducing manual recruiter effort through scalable AI-driven assessment.',
+//   links: { github: 'https://github.com/LITHISHWRAN/voxscout.git' }
+// }
 ];
 
 export default function Projects() {
@@ -36,7 +69,6 @@ export default function Projects() {
     <section id="projects" className={`section ${styles.projectsSection}`}>
       <div className={`container`}>
         <div className={styles.header}>
-          <div className={styles.label}>// SYSTEM IMPLEMENTATIONS</div>
           <h2 className={styles.heading}>Selected Projects</h2>
         </div>
 
@@ -74,6 +106,30 @@ export default function Projects() {
                   </svg>
                   Repository
                 </a>
+                {project.links.live && (
+                  <a
+                    href={project.links.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.actionBtn}
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M14 3h7v7"></path>
+                      <path d="M10 14L21 3"></path>
+                      <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"></path>
+                    </svg>
+                    Live Demo
+                  </a>
+                )}
                 {project.links.figma && (
                   <a href={project.links.figma} className={styles.actionBtn}>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
